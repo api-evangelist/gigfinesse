@@ -1,8 +1,23 @@
 aid: gigfinesse
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gigfinesse.png
 name: GigFinesse
-description: 'GigFinesse is a company surfaced as a portfolio company of bessemer-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: vertical-software. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'GigFinesse is a live-entertainment talent booking platform that connects hospitality venues
+  — hotels, restaurants, bars, and clubs — with musicians, DJs, and performing artists. Venues discover
+  and book vetted talent and manage contracts, insurance, scheduling, and payments through a centralized
+  dashboard, while artists gain access to consistent, recurring gig opportunities. Clients include premium
+  hospitality brands such as St. Regis, The Ritz-Carlton, Fairmont Hotels, and Hard Rock Hotel. GigFinesse
+  is backed by Bessemer Venture Partners. No public developer API is published as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/gigfinesse/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Vertical Software
+- Live Entertainment
+- Talent Booking
+- Hospitality
+- Music
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gigfinesse-domain-security.yml
 - type: Website
   url: https://www.gigfinesse.com/
+- type: Blog
+  url: https://www.gigfinesse.com/blog
+- type: Support
+  url: https://support.gigfinesse.com
+- type: SignUp
+  url: https://artist.gigfinesse.com/signup
+- type: TermsOfService
+  url: https://www.gigfinesse.com/terms
+- type: PrivacyPolicy
+  url: https://www.gigfinesse.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
